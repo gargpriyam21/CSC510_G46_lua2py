@@ -54,5 +54,42 @@ def csv(fname, fun, sep, src, s, t):
             row = line.split(sep)
             fun(row)
 
+def cli(t):
+    for slot, v in t.items():
+        v = str(v)
+        for n, x in enumerate(sys.argv):
+            if x == "-"+slot[0:1] or x=="--"+slot:
+                if v == "true":
+                    v = "false"
+                elif v == "false":
+                    v = "true"
+                else:
+                    v = sys.argv[n+1]
+        t[slot] = coerce(v)
+    if t['help'] == True:
+        sys.exit(print("\n"+help+"\n"))
+    
+    return t
 
+def oo(t):
+    if type(t) == list:
+        t = list(map(lambda x: str(x), t))
+        out_string = "{" + " ".join(t) + "}"
+        print(out_string)
+        return out_string
+    else:
+        out_string = o(t)
+        print(out_string)
+        return out_string
+
+def o(t):
+    out_string = "{"
+    for k,v in t.items():
+        out_string += ":" + str(k) + " " + str(v) + " "
+    out_string = out_string.strip()
+    out_string += "}"
+    return out_string
+
+def msg(status):
+    return "PASS" if status else "FAIL"
 
