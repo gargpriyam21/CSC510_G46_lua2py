@@ -35,3 +35,16 @@ def test_bignum():
     oo(num.nums())
     return 32 == len(num._has)
 
+def ALL():
+    tests = dir(test_lua2py)
+    tests = list(filter(lambda x: x[0:4] == "test", tests))
+    tests.remove("test_lua2py")
+
+    status = True
+    for t in tests:
+        print("\n−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−")
+        kstatus = run_tests(t)
+        if kstatus == False:
+            status = False
+    return status
+
