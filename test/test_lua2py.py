@@ -48,3 +48,32 @@ def ALL():
             status = False
     return status
 
+def run_tests(k):
+    tests = dir(test_lua2py)
+    tests = list(filter(lambda x: x[0:4] == "test", tests))
+    tests.remove("test_lua2py")
+
+    if k not in tests and k != "ALL":
+        return
+    
+    random.seed(0)
+
+    old = {}
+    for u,v in the.items():
+        old[u] = v
+    
+    if the['dump'] == True:
+        fun =  getattr(test_lua2py, k)
+        status = fun()
+        print("!!!!!!", msg(status), k, status)
+    else:
+        try:
+            fun =  getattr(test_lua2py, k)
+            status = fun()
+            print("!!!!!!", msg(status), k, status)
+        except:
+            status = False
+            print("!!!!!!", msg(status), k, status)
+
+    for u,v in old.items():
+        the[u] = v
