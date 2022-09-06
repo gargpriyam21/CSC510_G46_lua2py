@@ -1,0 +1,16 @@
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+{1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32}
+!!!!!! PASS test_bignum True
+
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+51 30.620155038759687
+!!!!!! PASS test_num True
+
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+{:mid a :div 1.378}
+!!!!!! PASS test_sym True
+
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+{:eg ALL :dump False :file ../data/auto93.csv :help False :nums 512 :seed 10019 :Seperator ,}
+!!!!!! PASS test_the True
+!!!!!! PASS ALL True
