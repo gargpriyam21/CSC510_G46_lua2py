@@ -16,12 +16,15 @@ class Num():
     
     def nums(self):
         if not self.isSorted:
+            if type(self._has) == dict:
+                self._has = self._has.values()
             self._has = sorted(self._has)
             self.isSorted = True
         return self._has
     
     def add(self, v, pos = None):
         if v != "?":
+            v = float(v)
             self.n += 1
             self.lo = min(self.lo,v)
             self.hi = max(self.hi,v)
@@ -31,7 +34,7 @@ class Num():
                 pos = random.randint(1,len(self._has))
             if pos:
                 self.isSorted = False
-                self._has[pos] = int(v)
+                self._has[pos] = float(v)
     
     def div(self):
         a = self.nums()

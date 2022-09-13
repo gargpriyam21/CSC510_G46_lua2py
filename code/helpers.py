@@ -40,13 +40,13 @@ the = create_the()
 
 def per(t, p = 0.5):
     p = math.floor((p * len(t)) + 0.5) 
-    return t[max(1, min(len(t), p))]
+    return t[max(0, min(len(t), p)-1)]
 
 def push(t,x):
     t.append(x)
     return x
 
-def csv(fname, fun, sep, src, s, t):
+def csv(fname, fun, sep=','):
     # sep = "([^" + sep + "]+)"
     with open(fname, "r") as src:
         lines_csv = src.readlines()
@@ -74,11 +74,17 @@ def cli(t):
 def oo(t):
     if type(t) == list:
         t = list(map(lambda x: str(x), t))
-        out_string = "{" + " ".join(t) + "}"
+        out_string = "{" + " ".join(t)[:-1] + "}"
+        print(out_string)
+        return out_string
+    elif type(t) == dict:
+        out_string = o(t)
         print(out_string)
         return out_string
     else:
-        out_string = o(t)
+        obj_dict = vars(t)
+        del obj_dict['_has']
+        out_string = (o(vars(t)))
         print(out_string)
         return out_string
 

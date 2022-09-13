@@ -21,7 +21,7 @@ class Sym():
     
     def div(self):
         def fun(p):
-            return p*math.log(p,2)
+            return p*math.log(p, 2)
         
         e = 0
         for _,n in self._has.items():
