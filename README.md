@@ -4,8 +4,8 @@
 
 <!--Badges-->
 <p align="center">
-<a href="https://doi.org/10.5281/zenodo.7028280">
-<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7028280.svg" alt="DOI"></a>
+<a href="https://zenodo.org/badge/latestdoi/533000112">
+<img src="https://zenodo.org/badge/533000112.svg" alt="DOI"></a>
 </a>
 <a href="https://travis-ci.org/gargpriyam21">
 <img src="https://travis-ci.org/gargpriyam21/CSC510_G46_lua2py.svg?master" />
@@ -53,7 +53,7 @@
 
 ## Table of Contents
 - [Introduction](#Introduction)
-- [Installation Steps](#ExecutionSteps)
+- [Execution Steps](#ExecutionSteps)
 - [License](#License)
 - [Contributing](#Contributing)
 - [Team Members](#TeamMember)
@@ -62,12 +62,40 @@
 
 The project here is the conversion of the source code provided at the [link](https://github.com/txt/se22/blob/main/etc/pdf/csv.pdf) from lua to python.
 
-Tasks Description:
+### Documentation
+
+For the complete documentation of the prject please refer to the [gargpriyam21.github.io/CSC510_G46_lua2py/](https://gargpriyam21.github.io/CSC510_G46_lua2py/)
+
+### Tasks Description:
 Homework| Task|
 |:------:|:------|
 |HW2     | Add the `Num` and `Sym` class and the tests cases `the`, `sym`, `num`, `bignum`.|
 |HW3     | Add the `Cols`, `Row`, `Data` class and the test cases `eg.csv, eg.data, eg.stats`.|
 |HW4     |  Add all the bling from HW1. Also, add post-commit hooks to auto run all the test cases, the code coverage checks (if your language supports then), and the documentation generators.|
+
+## ⚙️ Execution Steps <a name="ExecutionSteps"></a>
+
+To run the following source code, make sure you have the `auto93.csv` in the data folder.
+
+Execute the following command:
+
+``` python csv.py -e ALL```
+
+### Command Line Arguments:
+
+`-e` for running the specific test case "For example to run all test case `-e task` (and `-e ALL`) runs all tests.
+
+`-d` for in case of test failure, exit with stack dump  
+
+`-f` provide the file name in case the data is to be read from some other file
+
+`-h` show the help document for the current code
+
+`-n` upudate the nums to the specific number you provided
+
+`-s` specify the specific seed you want
+
+`-S` feild separator (default ',')
 
 ## 📝 License <a name="License"></a>
 
