@@ -10,6 +10,9 @@
 <a href="https://travis-ci.org/gargpriyam21">
 <img src="https://travis-ci.org/gargpriyam21/CSC510_G46_lua2py.svg?master" />
 </a>
+<a href="https://codecov.io/gh/gargpriyam21/CSC510_G46_lua2py" > 
+<img src="https://codecov.io/gh/gargpriyam21/CSC510_G46_lua2py/branch/main/graph/badge.svg?token=5PLVQBFU2L" /> 
+</a>
 </p>
 
 <p align="center">
@@ -24,9 +27,6 @@
 </a>
 <a href="https://github.com/gargpriyam21/CSC510_G46_lua2py/issues" target="blank">
 <img src="https://img.shields.io/github/issues/gargpriyam21/CSC510_G46_lua2py?style=for-the-badge" alt="CSC510_G46_lua2py issues"/>
-</a>
-<a href="https://codecov.io/gh/gargpriyam21/CSC510_G46_lua2py" target="blank"> 
-<img src="https://codecov.io/gh/gargpriyam21/CSC510_G46_lua2py/branch/main/graph/badge.svg?token=5PLVQBFU2L" alt="CSC510_G46_lua2py code-cov" /> 
 </a>
 <a href="https://github.com/gargpriyam21/CSC510_G46_lua2py/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/gargpriyam21/CSC510_G46_lua2py?style=for-the-badge" alt="CSC510_G46_lua2py pull-requests"/>
