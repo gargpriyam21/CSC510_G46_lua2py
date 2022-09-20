@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <title>Python: module code.helpers</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body bgcolor="#f0f0f8">
+
+    <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+        <tr bgcolor="#7799ee">
+            <td valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="index.html">
+                                    <font color="#ffffff">code</font>
+                                </a>.helpers</strong></big></big></font>
+            </td>
+            <td align=right valign=bottom>
+                <font color="#ffffff" face="helvetica, arial"><a href="index.html">index</a><br><a
+                        href="file:../code/helpers.py">code/helpers.py</a></font>
+            </td>
+        </tr>
+    </table>
+    <p></p>
+    <p>
+    <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+        <tr bgcolor="#aa55cc">
+            <td colspan=3 valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font>
+            </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+            <td>&nbsp;</td>
+            <td width="100%">
+                <table width="100%" summary="list">
+                    <tr>
+                        <td width="25%" valign=top><a href="math.html">math</a><br>
+                        </td>
+                        <td width="25%" valign=top><a href="random.html">random</a><br>
+                        </td>
+                        <td width="25%" valign=top><a href="re.html">re</a><br>
+                        </td>
+                        <td width="25%" valign=top><a href="sys.html">sys</a><br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <p>
+    <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+        <tr bgcolor="#eeaa77">
+            <td colspan=3 valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font>
+            </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+            <td>&nbsp;</td>
+            <td width="100%">
+                <dl>
+                    <dt><a name="-cli"><strong>cli</strong></a>(t)</dt>
+                    <dd><tt>Parse&nbsp;the&nbsp;command&nbsp;line&nbsp;arguments.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;{dict}&nbsp;--&nbsp;The&nbsp;dictionary&nbsp;to&nbsp;store&nbsp;the&nbsp;arguments&nbsp;in.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;dict&nbsp;--&nbsp;The&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;arguments&nbsp;stored.</tt>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a name="-coerce"><strong>coerce</strong></a>(s)</dt>
+                    <dd><tt>Coerce&nbsp;a&nbsp;string&nbsp;to&nbsp;a&nbsp;number,&nbsp;if&nbsp;possible.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;{str}&nbsp;--&nbsp;The&nbsp;string&nbsp;to&nbsp;coerce.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;int/float/str&nbsp;--&nbsp;The&nbsp;coerced&nbsp;value.</tt></dd>
+                </dl>
+                <dl>
+                    <dt><a name="-create_the"><strong>create_the</strong></a>()</dt>
+                    <dd><tt>Create&nbsp;the&nbsp;global&nbsp;variable&nbsp;'the'.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;dict&nbsp;--&nbsp;The&nbsp;global&nbsp;variable&nbsp;'the'.</tt>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a name="-csv"><strong>csv</strong></a>(fname, fun, sep=',')</dt>
+                    <dd><tt>Read&nbsp;a&nbsp;csv&nbsp;file&nbsp;and&nbsp;apply&nbsp;a&nbsp;function&nbsp;to&nbsp;each&nbsp;line.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;fname&nbsp;{str}&nbsp;--&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;file&nbsp;to&nbsp;read.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;fun&nbsp;{function}&nbsp;--&nbsp;The&nbsp;function&nbsp;to&nbsp;apply&nbsp;to&nbsp;each&nbsp;line.<br>
+                            Keyword&nbsp;Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;sep&nbsp;{str}&nbsp;--&nbsp;The&nbsp;separator&nbsp;to&nbsp;use.&nbsp;(default:&nbsp;{','})</tt>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a name="-msg"><strong>msg</strong></a>(status)</dt>
+                    <dd><tt>Print&nbsp;a&nbsp;status&nbsp;message.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;status&nbsp;{str}&nbsp;--&nbsp;The&nbsp;status&nbsp;message&nbsp;to&nbsp;print.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;str&nbsp;--&nbsp;The&nbsp;status&nbsp;message.</tt></dd>
+                </dl>
+                <dl>
+                    <dt><a name="-o"><strong>o</strong></a>(t)</dt>
+                    <dd><tt>Return&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object&nbsp;t&nbsp;embedded&nbsp;in&nbsp;{}.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;{dict}&nbsp;--&nbsp;The&nbsp;object&nbsp;to&nbsp;print.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;str&nbsp;--&nbsp;The&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.</tt>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a name="-oo"><strong>oo</strong></a>(t)</dt>
+                    <dd><tt>Print&nbsp;the&nbsp;object&nbsp;t.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;{dict/list/str}&nbsp;--&nbsp;The&nbsp;object&nbsp;to&nbsp;print.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;str&nbsp;--&nbsp;The&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;object.</tt>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a name="-per"><strong>per</strong></a>(t, p=0.5)</dt>
+                    <dd><tt>Return&nbsp;the&nbsp;p&nbsp;percentile&nbsp;of&nbsp;the&nbsp;list&nbsp;t.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;{list}&nbsp;--&nbsp;The&nbsp;list&nbsp;of&nbsp;values.<br>
+                            Keyword&nbsp;Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;{float}&nbsp;--&nbsp;The&nbsp;percentile&nbsp;to&nbsp;return.&nbsp;(default:&nbsp;{0.5})<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;--&nbsp;The&nbsp;p&nbsp;percentile&nbsp;of&nbsp;the&nbsp;list&nbsp;t.</tt>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a name="-push"><strong>push</strong></a>(t, x)</dt>
+                    <dd><tt>Push&nbsp;a&nbsp;value&nbsp;onto&nbsp;a&nbsp;list.<br>
+                            Arguments:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;{list}&nbsp;--&nbsp;The&nbsp;list&nbsp;to&nbsp;push&nbsp;onto.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;{any}&nbsp;--&nbsp;The&nbsp;value&nbsp;to&nbsp;push.<br>
+                            Returns:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;--&nbsp;The&nbsp;list&nbsp;with&nbsp;the&nbsp;value&nbsp;pushed.</tt>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+    <p>
+    <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+        <tr bgcolor="#55aa55">
+            <td colspan=3 valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font>
+            </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+            <td>&nbsp;</td>
+            <td width="100%"><strong>help</strong> = '<font color="#c040c0">\n</font>CSV : summarized csv file<font
+                    color="#c040c0">\n</font>(c) 2022 Tim Menzie...ator feild separator = ,<font color="#c040c0">\n
+                </font>'<br>
+                <strong>the</strong> = {'Seperator': ',', 'dump': False, 'eg': 'None', 'file': '../data/auto93.csv',
+                'help': False, 'nums': 512, 'seed': 10019}
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
