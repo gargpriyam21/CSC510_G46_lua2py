@@ -62,6 +62,10 @@
 
 The project here is the conversion of the source code provided at the [link](https://github.com/txt/se22/blob/main/etc/pdf/csv.pdf) from lua to python.
 
+### Environment
+
+- Python 3.7.13
+
 ### Documentation
 
 For the complete documentation of the prject please refer to the [gargpriyam21.github.io/CSC510_G46_lua2py/](https://gargpriyam21.github.io/CSC510_G46_lua2py/)
@@ -76,6 +80,10 @@ Homework| Task|
 ## ⚙️ Execution Steps <a name="ExecutionSteps"></a>
 
 To run the following source code, make sure you have the `auto93.csv` in the data folder.
+
+For installing the additional requirements, execute the following command
+
+``` pip install -r requirements.txt ```
 
 Execute the following command:
 
