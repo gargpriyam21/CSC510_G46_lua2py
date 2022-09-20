@@ -1,5 +1,5 @@
 <h1 align="center">
-  CSC510_SE_G46
+  CSC510_G46_lua2py
 </h1>
 
 <!--Badges-->
@@ -60,9 +60,17 @@
 
 ## 📖 Introduction <a name="Introduction"></a>
 
+The project here is the conversion of the source code provided at the [link](https://github.com/txt/se22/blob/main/etc/pdf/csv.pdf) from lua to python.
 
+Tasks Description:
+Homework| Task|
+|:------:|:------|
+|HW2     | Add the `Num` and `Sym` class and the tests cases `the`, `sym`, `num`, `bignum`.|
+|HW3     | Add the `Cols`, `Row`, `Data` class and the test cases `eg.csv, eg.data, eg.stats`.|
+|HW4     |  Add all the bling from HW1. Also, add post-commit hooks to auto run all the test cases, the code coverage checks (if your language supports then), and the documentation generators.|
 
 ## 📝 License <a name="License"></a>
+
 This project is licensed under the terms of the MIT license. Please check [License](https://github.com/divyang02/CSC510_SE_G46/blob/main/LICENSE) for more details.
 
 ## 🍰 Contributing <a name="Contributing"></a>
@@ -71,6 +79,8 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 ## 👥 Contributors <a name="Contributors"></a>
+
+### Group 46
 
 <table>
   <tr>
