@@ -1,0 +1,31 @@
+name: Running Code Coverage
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Install Python 3.7.11
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7.11
+    - name: Install dependencies
+      run: |
+        pip install coverage
+        pip install -r requirements.txt
+        echo requirements installed
+    - name: Run the tests
+      run: |
+          coverage run csv.py -e ALL
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: 105ef895-7c32-45d0-875f-35638f6ba435
