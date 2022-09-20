@@ -36,28 +36,28 @@
 - csv.py
 
 - code
-    __init__.py
-    cols.py
-    data.py
-    helpers.py
-    num.py
-    row.py
-    sym.py
+    - __init__.py
+    - cols.py
+    - data.py
+    - helpers.py
+    - num.py
+    - row.py
+    - sym.py
 
 - docs/out
-    out1.txt
+    - out1.txt
 
 - data
-    auto93.csv
+    - auto93.csv
 
 - test
-    __init__.py
-    test_lua2py.py
+   -  __init__.py
+   - test_lua2py.py
 
 - INSTALL.md
 
 - .github/workflows
-    code_cov.yml
+   - code_cov.yml
 
 ## Code of Conduct
 This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/gargpriyam21/CSC510_G46_lua2py/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to gargpriyam21@gmail.com.
