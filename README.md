@@ -64,7 +64,7 @@ The project here is the conversion of the source code provided at the [link](htt
 
 ### Environment
 
-- Python 3.7.13
+- Python 3.7
 
 ### Documentation
 
