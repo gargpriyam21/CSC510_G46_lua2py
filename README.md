@@ -7,7 +7,7 @@
 <a href="https://zenodo.org/badge/latestdoi/533000112">
 <img src="https://zenodo.org/badge/533000112.svg" alt="DOI"></a>
 </a>
-<a href="https://travis-ci.org/gargpriyam21">
+<a href="https://app.travis-ci.com/github/gargpriyam21/CSC510_G46_lua2py">
 <img src="https://travis-ci.org/gargpriyam21/CSC510_G46_lua2py.svg?master" />
 </a>
 <a href="https://codecov.io/gh/gargpriyam21/CSC510_G46_lua2py" > 
